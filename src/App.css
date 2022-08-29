@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template: 1fr 3fr 1fr / auto;
+}
+  .App-header {
+    height: 20vh;
+    text-align: start;
+    background-color: #22333b;
+  }
+    .App-logo {
+      margin: 20px;
+      width: 200px;
+    }
+
+  .App-main {
+    background-color: ;
+  }
+
+  .App-footer {
+    background-color: #f3f4f8;
+  }
