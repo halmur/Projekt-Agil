@@ -54,3 +54,24 @@
   .menuItems button:hover {
     background-color: #D64550;
   }
+  .signButton {
+    background-color: #D64550;
+    padding: 0.7rem;
+    width: 150px;
+    border-radius: 10px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    text-align:center;
+    border:none;
+    cursor: pointer;
+    margin-left: 10px;
+  
+  }
+  .signButton:hover {
+    background-image: linear-gradient(to right, #6253e1, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    transition: all .8s ease-in-out;
+  }
+  

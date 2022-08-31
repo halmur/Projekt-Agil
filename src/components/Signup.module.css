@@ -1,0 +1,92 @@
+.formContainer {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 120px 0;
+}
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 40%;
+    box-shadow: 11px 12px 13px 12px rgb(207,207,207);
+    border-radius: 20px;
+    padding-top: 40px;
+    background-color: #000;
+    position: relative;
+    
+}
+.icon {
+    position: absolute;
+    top: 10px;
+    left:47%;
+    color:#fb2525;
+    font-size: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    
+    
+    
+}
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    padding: 40px;
+    color:#fff;
+    margin-top: 50px;
+}
+.subContainer h1 {
+    font-size: 52px;
+    margin: 10px 0 40px 0;
+}
+.subContainer p {
+    margin: 20px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+.subContainer input {
+    width: 100%;
+    margin-bottom:20px;
+    font-size: 20px;
+}
+.subContainer input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color:#fff;
+    font-size: 24px;
+}
+.subContainer input[type="submit"] {
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.subContainer input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color:#000;
+    transition: 0.3s all ease-in-out;
+}
+.subContainer a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color:rgb(207,207,207)
+}
+
+.subContainer a:hover {
+    color:#ffc107;
+}

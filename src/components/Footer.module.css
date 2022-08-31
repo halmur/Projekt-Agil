@@ -4,7 +4,7 @@ footer {
     box-sizing: border-box;
 
     /* Plocka bort när resten av all content är inne */
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
   }
