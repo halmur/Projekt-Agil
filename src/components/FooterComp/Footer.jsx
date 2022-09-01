@@ -1,7 +1,7 @@
 import React from 'react'
-import instagram from "../media/instagramicon.png"
-import facebook from "../media/facebookicon.png"
-import tiktok from "../media/tiktokicon.png"
+import instagram from "../../media/instagramicon.png"
+import facebook from "../../media/facebookicon.png"
+import tiktok from "../../media/tiktokicon.png"
 import styles from "./Footer.module.css"
 
 const Footer = () => {
