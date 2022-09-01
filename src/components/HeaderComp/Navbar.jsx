@@ -1,5 +1,5 @@
 import React from 'react'
-import {menuItems} from '../menuItems'
+import {menuItems} from '../../menuItems'
 import MenuItems from './MenuItems';
 import styles from './Header.module.css'
 
