@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from './Main.module.css'
-// import heroImg from "../media/img_forest.jpg"
-// https://via.placeholder.com/1800x700.png?text=temp+hero+img
+import HeroSection from './HeroSection'
+import ProductCard from './ProductCard'
 
 const Main = () => {
   const heroImg = 'https://via.placeholder.com/1800x700/999.png'
-  const trendingArrivals = [
+  const seasonalTrends = [
     {
+      id: 1,
       name: 'JJICHRIS JJORIGINAL AM 994',
       brand: 'Jack & Jones',
       category: 'Jeans',
@@ -16,6 +17,7 @@ const Main = () => {
       color: ['lightblue', 'black', 'grey', 'white', 'beige']
     },
     {
+      id: 2,
       name: 'MR530SG Shoe',
       brand: 'New Balance',
       category: 'Sneakers',
@@ -25,6 +27,7 @@ const Main = () => {
       color: ['black', 'grey', 'white']
     },
     {
+      id: 3,
       name: 'PJS M Spectre Body Warmer',
       brand: 'Parajumper',
       category: 'Jackor',
@@ -34,6 +37,7 @@ const Main = () => {
       color: ['black']
     },
     {
+      id: 4,
       name: 'PJS M Spectre Body Warmer',
       brand: 'Parajumper',
       category: 'Jackor',
@@ -43,6 +47,7 @@ const Main = () => {
       color: ['black']
     },
     {
+      id: 5,
       name: 'PJS M Spectre Body Warmersdf asdfsdf ',
       brand: 'Parajumper',
       category: 'Jackor',
@@ -55,34 +60,14 @@ const Main = () => {
   return (      
     <> 
       <main className={styles.main}>
-        <div className={styles.hero}>
-          <img className={styles.hero_img} src={heroImg} alt="hero image" />
-
-          <div className={styles.hero_text}>
-            <div className={styles.text_left}>
-              <span>Get ready for all</span>
-              <button>Shop the styles</button>
-            </div>
-
-            <div className={styles.text_right}>
-              <span>Make a</span>
-              <span>statement of</span>
-              <span>yourself</span>
-            </div>
-          </div>
-        </div>
-
+        <HeroSection />
+        
         <div id={styles.main}>
           <section className={styles.trending_arrivals}>
-            <h1>nyheter som trendar hösten 2022</h1>
+            <h1>5 Hösttrender att smygstarta med</h1>
             
-            {trendingArrivals.map((item, i) => (
-              <div className={styles.product_card} key={i}>
-                <img className={styles.product_img} src={item.image} alt={item.category + ' image'} />
-                <span className={styles.product_name}>{item.name}</span>
-                <span className={styles.product_brand}>{item.brand}</span>
-                <span className={styles.product_price}>{item.price} kr</span>
-              </div>
+            {seasonalTrends.map((productData, i) => (
+              <ProductCard pD={productData} key={i}/>
             ))}
           </section>
 
