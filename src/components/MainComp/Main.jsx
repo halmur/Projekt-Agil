@@ -55,10 +55,6 @@ const Main = () => {
   return (      
     <> 
       <main className={styles.main}>
-        <div className={styles.top}>
-          <p>72 Hour FLASH SALE - 70% OFF Projekt Agil (Scrum) Webbutveckling i JavaScript </p>
-        </div>
-
         <div className={styles.hero}>
           <img className={styles.hero_img} src={heroImg} alt="hero image" />
 
