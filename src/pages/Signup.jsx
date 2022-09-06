@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Signup.module.css";
 import { FaUserAlt} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -17,7 +18,9 @@ const Signup = () => {
             <input type="submit" value="Login" />
             <a href="#">Lost your password?</a>
             <a href="#">Don't have an account?</a>
-            
+            <Link to='/'>
+            <button className={styles.goback}>Go back</button>
+            </Link>
           </form>
         </div>
       </div>

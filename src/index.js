@@ -16,16 +16,18 @@ import Outlet from './pages/Outlet';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-      <Layout>
     <Routes>
-      <Route path='/' element={<App/>}/>
-      <Route path='/signup' element={<Signup/>}/>
-      <Route path='/nyheter' element={ <Nyheter/> }/>
-      <Route path='/category/:slug' element={ <Products/> }/>
-      <Route path='/varumarken' element={ <Varumarken/> }/>
-      <Route path='/topplistan' element={ <Topplistan/> }/>
-      <Route path='/outlet' element={ <Outlet/> }/>
+      <Route path='/' element={<Layout/>}>
+          <Route index element={ <App/> } />
+          <Route path='/nyheter' element={ <Nyheter/> }/>
+          <Route path='/category/:slug' element={ <Products/> }/>
+          <Route path='/varumarken' element={ <Varumarken/> }/>
+          <Route path='/topplistan' element={ <Topplistan/> }/>
+          <Route path='/outlet' element={ <Outlet/> }/>
+      </Route>
+        <Route path='/signup' element={ <Signup/> } />
+
+
     </Routes>
-    </Layout>
   </BrowserRouter>
 );

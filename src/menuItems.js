@@ -34,8 +34,8 @@ export const menuItems = [
         url: '/topplistan',
     },
     {
-        title: 'SKOR',
-        url: '/category/skor',
+        title: 'JACKOR',
+        url: '/category/jackor',
     },
     {
         title: 'OUTLET',
