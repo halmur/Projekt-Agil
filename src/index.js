@@ -21,7 +21,7 @@ root.render(
           <Route index element={ <App/> } />
           <Route path='/nyheter' element={ <Nyheter/> }/>
           <Route path='/category/:slug' element={ <Products/> }/>
-          <Route path='/varumarken' element={ <Varumarken/> }/>
+          <Route path='/varumarken/:slug' element={ <Varumarken/> }/>
           <Route path='/topplistan' element={ <Topplistan/> }/>
           <Route path='/outlet' element={ <Outlet/> }/>
       </Route>

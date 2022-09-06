@@ -7,15 +7,19 @@ import {Link} from 'react-router-dom'
 function MenuItems({items}) {
 
     const [dropdown, setDropdown] = useState(false)
+    const test = () => {
+      setDropdown(false)
+
+    }
 
   return (
     <li className={styles.menuItems}>
       {items.submenu ? (
         <>
-          <button type="button" aria-haspopup="menu" aria-expanded={dropdown ? "true" : "false"} onClick={() => setDropdown((prev) => !prev)} >
+          <button type="button" aria-haspopup="menu" aria-expanded={dropdown ? "true" : "false"} onClick={() => setDropdown((prev) => !prev)}  >
             {items.title}{' '}
           </button>
-          <Dropdown submenus={items.submenu} dropdown={dropdown} />
+          <Dropdown submenus={items.submenu} dropdown={dropdown} setDropdown={setDropdown} />
         </>
       ) : (
         <Link to={items.url}>

@@ -28,6 +28,20 @@ export const menuItems = [
     {
         title: 'VARUMÄRKEN',
         url: '/varumarken',
+        submenu: [
+            {
+                title: 'Parajumper',
+                url: '/varumarken/parajumper',
+            },
+            {
+                title: 'New Balance',
+                url: '/varumarken/newbalance',
+            },
+            {
+                title: 'Jack & Jones',
+                url: '/varumarken/jack&jones',
+            },
+        ],
     },
     {
         title: 'TOPPLISTAN',
