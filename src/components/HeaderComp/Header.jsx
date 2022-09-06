@@ -20,6 +20,9 @@ const Header = () => {
           </Link>
           <Search />
           <HeaderIcons />
+          <Link to="/admin">
+            <button className={styles.adminButton}>Admin</button>
+          </Link>
         </div>
       </header>
     </>
