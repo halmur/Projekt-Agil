@@ -8,11 +8,6 @@ function Navbar() {
     <nav>
         <ul className={styles.menus}>
             {menuItems.map((menu, i) => {
-                // return (
-                // <li className='menu-items' key={i}>
-                //     <a href={menu.url}>{menu.title}</a>
-                // </li>
-                // );
                 return <MenuItems items={menu} key={i} />;
             })}
         </ul>
