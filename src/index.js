@@ -7,6 +7,9 @@ import Signup from './pages/Signup';
 import Nyheter from './pages/Nyheter';
 import Products from './pages/Products';
 import Layout from './components/Layout';
+import Varumarken from './pages/Varumarken';
+import Topplistan from './pages/Topplistan';
+import Outlet from './pages/Outlet';
 
 
 
@@ -19,6 +22,9 @@ root.render(
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/nyheter' element={ <Nyheter/> }/>
       <Route path='/category/:id' element={ <Products/> }/>
+      <Route path='/varumarken' element={ <Varumarken/> }/>
+      <Route path='/topplistan' element={ <Topplistan/> }/>
+      <Route path='/outlet' element={ <Outlet/> }/>
     </Routes>
     </Layout>
   </BrowserRouter>
