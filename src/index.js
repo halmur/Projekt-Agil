@@ -21,7 +21,7 @@ root.render(
       <Route path='/' element={<App/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/nyheter' element={ <Nyheter/> }/>
-      <Route path='/category/:id' element={ <Products/> }/>
+      <Route path='/category/:slug' element={ <Products/> }/>
       <Route path='/varumarken' element={ <Varumarken/> }/>
       <Route path='/topplistan' element={ <Topplistan/> }/>
       <Route path='/outlet' element={ <Outlet/> }/>

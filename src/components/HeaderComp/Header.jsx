@@ -11,7 +11,9 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <div className={styles.navarea}>
+          <Link to="/">
           <img src={logo2} className={styles.logo} alt="logo" />
+          </Link>
           <Navbar />
           <Link to="/signup">
             <button className={styles.signButton}>Sign up</button>

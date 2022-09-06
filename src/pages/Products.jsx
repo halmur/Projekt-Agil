@@ -1,12 +1,16 @@
 import React from 'react'
-import Footer from '../components/FooterComp/Footer'
-import Header from '../components/HeaderComp/Header'
+import { useParams } from 'react-router-dom'
+import { tempProducts } from '../tempProducts'
 
 const Products = () => {
+    const {slug} = useParams()
+    console.log(slug);
+    console.log(tempProducts.filter(x => x.category === slug))
+
   return (
     <>
 
-    <div>products</div>
+    <div>{slug}</div>
 
     </>
   )
