@@ -1,44 +1,44 @@
 export const menuItems = [
     {
         title: 'NYHETER',
-        url: '/',
+        url: '/nyheter',
     },
     {
         title: 'KATEGORIER',
-        url: '/',
+        url: '/category',
         submenu: [
             {
                 title: 'T-shirt',
-                url: '/',
+                url: '/category/tshirt',
             },
             {
                 title: 'Tröjor',
-                url: '/',
+                url: '/category/trojor',
             },
             {
                 title: 'Byxor',
-                url: '/',
+                url: '/category/byxor',
             },
             {
                 title: 'Skor',
-                url: '/',
+                url: '/category/skor',
             },
         ],
     },
     {
         title: 'VARUMÄRKEN',
-        url: '/',
+        url: '/varumarken',
     },
     {
         title: 'TOPPLISTAN',
-        url: '/',
+        url: '/topplistan',
     },
     {
         title: 'SKOR',
-        url: '/',
+        url: '/category/skor',
     },
     {
         title: 'OUTLET',
-        url: '/',
+        url: '/outlet',
     },
 ]
