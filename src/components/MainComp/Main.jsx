@@ -58,6 +58,7 @@ const Main = () => {
     }
   ]
 
+
   return (      
     <> 
       <main className={styles.main}>
@@ -68,7 +69,7 @@ const Main = () => {
         <div className={styles.content}>
           <section className={styles.trending_arrivals}>
             <h1>5 Hösttrender att smygstarta med</h1>
-            
+
             {seasonalTrends.map((productData, i) => (
               <ProductCard pD={productData} key={i} />
             ))}
