@@ -8,28 +8,31 @@
 
 .product_card:hover {
   transform: scale(1.2);
-    z-index: 2;
-    transition: 0.3s all ease-in-out;
+  z-index: 2;
+  transition: 0.3s all ease-in-out;
 }
-  .product_card span {
-    display: block;
-  }
-  .product_img:hover {
-    
-  }
-  .product_name {
-    margin-top: 10px;
-    font-family: 'Albert Sans', sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden; 
-    max-width: 200px; 
-    height: 1.2em; 
-    white-space: nowrap;
-  }
-  .product_brand {
-    padding: 5px 0;
-    color: grey;
-  }
-  .product_price {
-    font-size: 14px;
-  }
+
+.product_card span {
+  display: block;
+}
+
+.product_img:hover {}
+
+.product_name {
+  margin-top: 10px;
+  font-family: 'Albert Sans', sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 200px;
+  height: 1.2em;
+  white-space: nowrap;
+}
+
+.product_brand {
+  padding: 5px 0;
+  color: grey;
+}
+
+.product_price {
+  font-size: 14px;
+}
