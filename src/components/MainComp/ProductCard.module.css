@@ -2,8 +2,10 @@
   padding: 10px;
   color: #273469;
   background-color: #fff;
+  background-color: #fbfbfb;
   cursor: pointer;
 }
+
 .product_card:hover {
   transform: scale(1.2);
     z-index: 2;

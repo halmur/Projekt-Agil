@@ -1,6 +1,6 @@
 import styles from './ProductCard.module.css'
 
-const ProductCard = ({pD}) => {
+const ProductCard = ({ pD }) => {
   return (
     <div className={styles.product_card}>
       <img className={styles.product_img} src={pD.image} alt={pD.category + ' image'} />
