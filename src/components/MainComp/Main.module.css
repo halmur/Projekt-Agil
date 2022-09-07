@@ -4,22 +4,29 @@
   margin-bottom: 5rem;
 }
 
- #main {
-    max-width: 1280px;
-    margin: 3rem auto 0;
+#main {
+  max-width: 1280px;
+  margin: 3rem auto 0;
 
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 50px;
-  }
-    .trending_arrivals {
-      display: grid;
-      grid-template: auto auto / repeat(5, 1fr);
-      row-gap: 20px;
-      justify-items: center;
-    }
-      .trending_arrivals h1 {
-        grid-area: 1 / 1 / 2 / end;
-        color: #273469;
-        /* text-transform: capitalize */
-      }
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 50px;
+}
+
+.trending_arrivals {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  row-gap: 20px;
+  justify-items: center;
+
+}
+
+.trending_arrivals h1 {
+  grid-area: 1 / 1 / 2 / end;
+  color: #273469;
+  /* text-transform: capitalize */
+}
+
+.products {
+  min-height: 100vh;
+}

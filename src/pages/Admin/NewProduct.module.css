@@ -9,7 +9,7 @@
     height: 100vh;
     margin: 0vw;
     padding: 5vw ;
-    position:relative; 
+    position:relative;
 
 }
 
@@ -64,27 +64,26 @@
     -webkit-user-select: none;
     width: auto;
   }
-  
+
   .goback:focus-visible {
     box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
     transition: box-shadow .2s;
   }
-  
+
   .goback:active {
     background-color: #F7F7F7;
     border-color: #000000;
     transform: scale(.96);
   }
-  
+
   .goback:disabled {
     border-color: #DDDDDD;
     color: #DDDDDD;
     cursor: not-allowed;
     opacity: 1;
-  } 
+  }
 
 
 
 
 
-  

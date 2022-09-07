@@ -4,133 +4,144 @@
     display: flex;
     padding: 120px 0;
 }
+
 .formWrapper {
     display: flex;
     justify-content: center;
     height: 800px;
     width: 40%;
-    box-shadow: 11px 12px 13px 12px rgb(207,207,207);
+    box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
     border-radius: 20px;
     padding-top: 40px;
     background-color: #000;
     position: relative;
-    
+
 }
+
 .icon {
     position: absolute;
     top: 10px;
-    left:47%;
-    color:#fb2525;
+    left: 47%;
+    color: #fb2525;
     font-size: 90px;
     border: 2px solid #fff;
     border-radius: 50%;
     padding: 5px;
-    
-    
-    
+
+
+
 }
+
 .subContainer {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 60%;
     padding: 40px;
-    color:#fff;
+    color: #fff;
     margin-top: 50px;
 }
+
 .subContainer h1 {
     font-size: 52px;
     margin: 10px 0 40px 0;
 }
+
 .subContainer p {
     margin: 20px;
     padding: 0;
     font-weight: bold;
     font-size: 30px;
-    
+
 }
+
 .subContainer input {
     width: 100%;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     font-size: 20px;
 }
-.subContainer input[type="text"], input[type="password"] {
+
+.subContainer input[type="text"],
+input[type="password"] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
     outline: none;
-    color:#fff;
+    color: #fff;
     font-size: 24px;
 }
+
 .subContainer input[type="submit"] {
-    border:none;
+    border: none;
     outline: none;
     height: 40px;
     background: #fb2525;
-    color:#fff;
+    color: #fff;
     font-size: 20px;
     font-weight: 600;
     margin-top: 30px;
     border-radius: 20px;
 }
+
 .subContainer input[type="submit"]:hover {
     cursor: pointer;
     background: #ffc107;
-    color:#000;
+    color: #000;
     transition: 0.3s all ease-in-out;
 }
+
 .subContainer a {
     margin-top: 10px;
     text-decoration: none;
     font-size: 14px;
     line-height: 20px;
-    color:rgb(207,207,207)
+    color: rgb(207, 207, 207)
 }
 
 .subContainer a:hover {
-    color:#ffc107;
+    color: #ffc107;
 }
 
 .goback {
-  background-color: #FFFFFF;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #222222;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
-  margin-top: 2rem;
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+    margin-top: 2rem;
 }
 
 .goback:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow .2s;
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
 }
 
 .goback:active {
-  background-color: #F7F7F7;
-  border-color: #000000;
-  transform: scale(.96);
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
 }
 
 .goback:disabled {
-  border-color: #DDDDDD;
-  color: #DDDDDD;
-  cursor: not-allowed;
-  opacity: 1;
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
 }

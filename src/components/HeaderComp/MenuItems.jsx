@@ -1,16 +1,16 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Dropdown from './Dropdown'
 import styles from './Header.module.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
-function MenuItems({items}) {
+function MenuItems({ items }) {
 
-    const [dropdown, setDropdown] = useState(false)
-    const test = () => {
-      setDropdown(false)
+  const [dropdown, setDropdown] = useState(false)
+  const test = () => {
+    setDropdown(false)
 
-    }
+  }
 
   return (
     <li className={styles.menuItems}>
@@ -23,7 +23,7 @@ function MenuItems({items}) {
         </>
       ) : (
         <Link to={items.url}>
-        <div>{items.title}</div>
+          <div>{items.title}</div>
         </Link>
       )}
     </li>

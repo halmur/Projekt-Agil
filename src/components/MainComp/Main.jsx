@@ -57,17 +57,17 @@ const Main = () => {
       color: ['black']
     }
   ]
-  return (      
-    <> 
+  return (
+    <>
       <main className={styles.main}>
         <HeroSection />
-        
+
         <div id={styles.main}>
           <section className={styles.trending_arrivals}>
             <h1>5 Hösttrender att smygstarta med</h1>
-            
+
             {seasonalTrends.map((productData, i) => (
-              <ProductCard pD={productData} key={i}/>
+              <ProductCard pD={productData} key={i} />
             ))}
           </section>
 

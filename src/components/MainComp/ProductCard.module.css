@@ -3,22 +3,26 @@
   color: #273469;
   background-color: #fff;
 }
-  .product_card span {
-    display: block;
-  }
-  .product_name {
-    margin-top: 10px;
-    font-family: 'Albert Sans', sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden; 
-    max-width: 200px; 
-    height: 1.2em; 
-    white-space: nowrap;
-  }
-  .product_brand {
-    padding: 5px 0;
-    color: grey;
-  }
-  .product_price {
-    font-size: 14px;
-  }
+
+.product_card span {
+  display: block;
+}
+
+.product_name {
+  margin-top: 10px;
+  font-family: 'Albert Sans', sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 200px;
+  height: 1.2em;
+  white-space: nowrap;
+}
+
+.product_brand {
+  padding: 5px 0;
+  color: grey;
+}
+
+.product_price {
+  font-size: 14px;
+}
