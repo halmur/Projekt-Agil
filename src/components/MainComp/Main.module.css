@@ -15,7 +15,7 @@
     .trending_arrivals {
       display: grid;
       grid-template: auto auto / repeat(5, 1fr);
-      row-gap: 20px;
+      row-gap: 40px;
       justify-items: center;
     }
       .trending_arrivals h1 {
