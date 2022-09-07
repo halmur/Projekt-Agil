@@ -4,29 +4,35 @@
   margin-bottom: 5rem;
 }
 
-#main {
-  max-width: 1280px;
-  margin: 3rem auto 0;
+ .content {
+    max-width: 1280px;
+    margin: 3rem auto 0;
 
-  display: grid;
-  grid-template-columns: 100%;
-  grid-row-gap: 50px;
-}
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 100px;
+  }
+    .trending_arrivals {
+      display: grid;
+      grid-template: auto auto / repeat(5, 1fr);
+      row-gap: 20px;
+      justify-items: center;
+    }
+      .trending_arrivals h1 {
+        grid-area: 1 / 1 / 2 / end;
+        color: #273469;
+        /* text-transform: capitalize */
+      }
 
-.trending_arrivals {
-  display: grid;
-  grid-template: auto auto / repeat(5, 1fr);
-  row-gap: 20px;
-  justify-items: center;
+    .tips {
+      background-color: aliceblue;
+    }
 
-}
-
-.trending_arrivals h1 {
-  grid-area: 1 / 1 / 2 / end;
-  color: #273469;
-  /* text-transform: capitalize */
-}
+    .outlet {
+      background-color: aliceblue;
+    }
 
 .products {
   min-height: 100vh;
 }
+

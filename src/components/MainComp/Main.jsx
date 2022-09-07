@@ -2,9 +2,9 @@ import React from 'react'
 import styles from './Main.module.css'
 import HeroSection from './HeroSection'
 import ProductCard from './ProductCard'
+import ImgSlider from './ImgSlider'
 
 const Main = () => {
-  const heroImg = 'https://via.placeholder.com/1800x700/999.png'
   const seasonalTrends = [
     {
       id: 1,
@@ -57,12 +57,16 @@ const Main = () => {
       color: ['black']
     }
   ]
-  return (
-    <>
+
+
+  return (      
+    <> 
       <main className={styles.main}>
         <HeroSection />
-
-        <div id={styles.main}>
+        
+        <ImgSlider />
+        
+        <div className={styles.content}>
           <section className={styles.trending_arrivals}>
             <h1>5 Hösttrender att smygstarta med</h1>
 
