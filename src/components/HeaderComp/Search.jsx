@@ -7,7 +7,7 @@ const Search = () => {
       <form className={styles.searchForm}>
         <input type="text" placeholder="Search" name="q" />
         <button>
-            <TbSearch className={styles.searchIcon}/>
+          <TbSearch className={styles.searchIcon} />
         </button>
       </form>
     </div>

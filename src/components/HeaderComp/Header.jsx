@@ -11,13 +11,18 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <div className={styles.navarea}>
-          <img src={logo2} className={styles.logo} alt="logo" />
+          <Link to="/">
+            <img src={logo2} className={styles.logo} alt="logo" />
+          </Link>
           <Navbar />
           <Link to="/signup">
             <button className={styles.signButton}>Sign up</button>
           </Link>
           <Search />
           <HeaderIcons />
+          <Link to="/admin">
+            <button className={styles.adminButton}>Admin</button>
+          </Link>
         </div>
       </header>
     </>
