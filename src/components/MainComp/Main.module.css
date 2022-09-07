@@ -4,13 +4,13 @@
   margin-bottom: 5rem;
 }
 
- #main {
+ .content {
     max-width: 1280px;
     margin: 3rem auto 0;
 
     display: grid;
     grid-template-columns: 100%;
-    grid-row-gap: 50px;
+    grid-row-gap: 100px;
   }
     .trending_arrivals {
       display: grid;
@@ -23,3 +23,11 @@
         color: #273469;
         /* text-transform: capitalize */
       }
+
+    .tips {
+      background-color: aliceblue;
+    }
+
+    .outlet {
+      background-color: aliceblue;
+    }
