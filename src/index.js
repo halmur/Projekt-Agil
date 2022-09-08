@@ -13,6 +13,7 @@ import Layout from './components/Layout';
 import Varumarken from './pages/Varumarken';
 import Topplistan from './pages/Topplistan';
 import Outlet from './pages/Outlet';
+import ProductDetail from './pages/ProductDetail';
 
 
 
@@ -24,9 +25,11 @@ root.render(
         <Route index element={<App />} />
         <Route path='/nyheter' element={<Nyheter />} />
         <Route path='/category/:slug' element={<Products />} />
+        <Route path='/category/:slug/product/:id' element={<ProductDetail />} />
         <Route path='/varumarken/:slug' element={<Varumarken />} />
         <Route path='/topplistan' element={<Topplistan />} />
         <Route path='/outlet' element={<Outlet />} />
+
       </Route>
       <Route path='/signup' element={<Signup />} />
       <Route path='/admin' element={<AdminHome />} />

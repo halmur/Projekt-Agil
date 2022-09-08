@@ -3,6 +3,7 @@ import styles from './Main.module.css'
 import HeroSection from './HeroSection'
 import ProductCard from './ProductCard'
 import ImgSlider from './ImgSlider'
+import { Link } from 'react-router-dom'
 
 const Main = () => {
   const seasonalTrends = [
@@ -11,6 +12,7 @@ const Main = () => {
       name: 'JJICHRIS JJORIGINAL AM 994',
       brand: 'Jack & Jones',
       category: 'Jeans',
+      categoryslug: 'byxor',
       price: '499',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
@@ -21,6 +23,7 @@ const Main = () => {
       name: 'MR530SG Shoe',
       brand: 'New Balance',
       category: 'Sneakers',
+      categoryslug: 'skor',
       price: '1099',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
@@ -31,6 +34,7 @@ const Main = () => {
       name: 'PJS M Spectre Body Warmer',
       brand: 'Parajumper',
       category: 'Jackor',
+      categoryslug: 'jackor',
       price: '3499',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
@@ -41,6 +45,7 @@ const Main = () => {
       name: 'PJS M Spectre Body Warmer',
       brand: 'Parajumper',
       category: 'Jackor',
+      categoryslug: 'jackor',
       price: '3499',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
@@ -51,6 +56,7 @@ const Main = () => {
       name: 'PJS M Spectre Body Warmersdf asdfsdf ',
       brand: 'Parajumper',
       category: 'Jackor',
+      categoryslug: 'jackor',
       price: '3499',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
