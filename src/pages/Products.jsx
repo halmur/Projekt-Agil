@@ -12,14 +12,14 @@ const Products = () => {
   return (
     <>
       <div className={styles.products}>
-        <div>{categorytitle}</div>
+        <h2 className={styles.categoryTitle}>{categorytitle}</h2>
         <section className={styles.trending_arrivals}>
           {tempProducts.filter(x => x.categoryslug === slug).map((productData, i) => (
             <ProductCard pD={productData} key={i} />
           ))}
         </section>
       </div>
-    </>
+  </>
   )
 }
 

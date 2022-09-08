@@ -77,7 +77,7 @@ const Main = () => {
 
           <section className={styles.tips}>
             <h1>Tips</h1>
-            <p>some fashion tips for you</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum sunt iusto nobis eum ex obcaecati impedit laudantium. Id ea nesciunt incidunt totam pariatur ducimus veritatis, enim libero, deleniti possimus adipisci non placeat eveniet quaerat corrupti architecto repudiandae beatae eius assumenda sapiente soluta eum ullam. Dolorum pariatur ea a in magnam.</p>
           </section>
 
           <section className={styles.outlet}>

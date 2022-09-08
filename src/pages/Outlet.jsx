@@ -7,7 +7,7 @@ const Outlet = () => {
   return (
     <>
       <div className={styles.products}>
-        <div>Outlet</div>
+      <h2 className={styles.categoryTitle}>Outlet</h2>
         <section className={styles.trending_arrivals}>
           {tempProducts.filter(x => x.sale === true).map((productData, i) => (
             <ProductCard pD={productData} key={i} />

@@ -9,7 +9,7 @@ const Varumarken = () => {
   return (
     <>
       <div className={styles.products}>
-        <div>Varumärken</div>
+        <h2 className={styles.categoryTitle}>Varumärken</h2>
         <section className={styles.trending_arrivals}>
           {tempProducts.filter(x => x.brandslug === slug).map((productData, i) => (
             <ProductCard pD={productData} key={i} />
