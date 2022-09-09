@@ -1,0 +1,26 @@
+.product_container, .new_product_container {
+  /* margin: 5rem 0; */
+  min-height: 100vh;
+  color: white;
+  background-color: #27346933;
+}
+  .product, .new_product {
+    padding: 1rem;
+    background-color: #273469;
+  }
+    .product_info span, .new_product_info span {
+      display: block;
+    }
+    .product_brand, .new_product_brand {
+      display: inline !important;
+    }
+    .product_brand {
+      color: red;
+    }
+    .new_product_brand {
+      color: violet;
+    }
+    .product button, .new_product button {
+      padding: 5px;
+      cursor: pointer;
+    }
