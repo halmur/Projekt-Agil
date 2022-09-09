@@ -7,9 +7,9 @@ const Nyheter = () => {
   return (
     <>
       <div className={styles.products}>
-        <div>
+      <h2 className={styles.categoryTitle}>
           nya produker
-        </div>
+        </h2>
         <section className={styles.trending_arrivals}>
           {tempProducts.filter(x => x.new === true).map((productData, i) => (
             <ProductCard pD={productData} key={i} />
