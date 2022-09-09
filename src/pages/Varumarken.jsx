@@ -5,15 +5,17 @@ import ProductCard from '../components/MainComp/ProductCard'
 import styles from '../components/MainComp/Main.module.css'
 
 const Varumarken = () => {
-  const {slug} = useParams()
+  const { slug } = useParams()
   return (
     <>
-    <div>Varumärken</div>
-    <section className={styles.trending_arrivals}>
-    {tempProducts.filter(x => x.brandslug === slug).map((productData, i) => (
-        <ProductCard pD={productData} key={i}/>
-    ))}
-    </section>
+      <div className={styles.products}>
+        <h2 className={styles.categoryTitle}>Varumärken</h2>
+        <section className={styles.trending_arrivals}>
+          {tempProducts.filter(x => x.brandslug === slug).map((productData, i) => (
+            <ProductCard pD={productData} key={i} />
+          ))}
+        </section>
+      </div>
     </>
   )
 }

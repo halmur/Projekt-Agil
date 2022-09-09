@@ -6,13 +6,14 @@ import styles from '../components/MainComp/Main.module.css'
 const Outlet = () => {
   return (
     <>
-    <div>Outlet</div>
-    <section className={styles.trending_arrivals}>
-    {tempProducts.filter(x => x.sale === true).map((productData, i) => (
-        <ProductCard pD={productData} key={i}/>
-    ))}
-    </section>
-
+      <div className={styles.products}>
+      <h2 className={styles.categoryTitle}>Outlet</h2>
+        <section className={styles.trending_arrivals}>
+          {tempProducts.filter(x => x.sale === true).map((productData, i) => (
+            <ProductCard pD={productData} key={i} />
+          ))}
+        </section>
+      </div>
     </>
   )
 }

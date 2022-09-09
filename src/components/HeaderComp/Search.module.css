@@ -4,41 +4,40 @@
     width: 320px;
     background-color: #fff;
     align-items: center;
-    
-    
 }
+
 .searchForm {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 40px;
     width: 100%;
-    
-    
 }
+
 .searchForm input {
     outline: none;
-    border:none;
+    border: none;
     height: 40px;
     width: 320px;
     padding: 10px;
-   
-
 }
+
 .searchForm input[type="text"] {
     font-size: 20px;
 }
+
 .searchForm input[type="text"]::placeholder {
     font-size: 20px;
     border: none;
 }
+
 .searchForm button {
     background-color: #fff;
     border: none;
 }
+
 .searchIcon {
-    color:black;
+    color: black;
     font-size: 30px;
     cursor: pointer;
-    
 }

@@ -3,12 +3,12 @@ import Footer from './FooterComp/Footer'
 import Header from './HeaderComp/Header'
 import { Outlet } from 'react-router-dom'
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
-    <Header/>
-    <Outlet/>
-    <Footer/>
+      <Header />
+      <Outlet />
+      <Footer />
     </>
   )
 }

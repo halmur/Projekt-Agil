@@ -2,15 +2,17 @@ import React from 'react'
 import styles from './Main.module.css'
 import HeroSection from './HeroSection'
 import ProductCard from './ProductCard'
+import ImgSlider from './ImgSlider'
+
 
 const Main = () => {
-  const heroImg = 'https://via.placeholder.com/1800x700/999.png'
   const seasonalTrends = [
     {
       id: 1,
       name: 'JJICHRIS JJORIGINAL AM 994',
       brand: 'Jack & Jones',
       category: 'Jeans',
+      categoryslug: 'byxor',
       price: '499',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
@@ -21,6 +23,7 @@ const Main = () => {
       name: 'MR530SG Shoe',
       brand: 'New Balance',
       category: 'Sneakers',
+      categoryslug: 'skor',
       price: '1099',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
@@ -31,6 +34,7 @@ const Main = () => {
       name: 'PJS M Spectre Body Warmer',
       brand: 'Parajumper',
       category: 'Jackor',
+      categoryslug: 'jackor',
       price: '3499',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
@@ -41,6 +45,7 @@ const Main = () => {
       name: 'PJS M Spectre Body Warmer',
       brand: 'Parajumper',
       category: 'Jackor',
+      categoryslug: 'jackor',
       price: '3499',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
@@ -51,29 +56,34 @@ const Main = () => {
       name: 'PJS M Spectre Body Warmersdf asdfsdf ',
       brand: 'Parajumper',
       category: 'Jackor',
+      categoryslug: 'jackor',
       price: '3499',
       image: 'https://via.placeholder.com/220xs300.png?text=product+image',
       size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
       color: ['black']
     }
   ]
+
+
   return (      
     <> 
       <main className={styles.main}>
         <HeroSection />
         
-        <div id={styles.main}>
+        <ImgSlider />
+        
+        <div className={styles.content}>
           <section className={styles.trending_arrivals}>
             <h1>5 Hösttrender att smygstarta med</h1>
-            
+
             {seasonalTrends.map((productData, i) => (
-              <ProductCard pD={productData} key={i}/>
+              <ProductCard pD={productData} key={i} />
             ))}
           </section>
 
           <section className={styles.tips}>
             <h1>Tips</h1>
-            <p>some fashion tips for you</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum sunt iusto nobis eum ex obcaecati impedit laudantium. Id ea nesciunt incidunt totam pariatur ducimus veritatis, enim libero, deleniti possimus adipisci non placeat eveniet quaerat corrupti architecto repudiandae beatae eius assumenda sapiente soluta eum ullam. Dolorum pariatur ea a in magnam.</p>
           </section>
 
           <section className={styles.outlet}>

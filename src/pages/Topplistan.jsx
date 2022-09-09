@@ -6,12 +6,14 @@ import styles from '../components/MainComp/Main.module.css'
 const Topplistan = () => {
   return (
     <>
-    <div>Topplistan</div>
-    <section className={styles.trending_arrivals}>
-    {tempProducts.filter(x => x.likes > 300).map((productData, i) => (
-        <ProductCard pD={productData} key={i}/>
-    ))}
-    </section>
+      <div className={styles.products}>
+      <h2 className={styles.categoryTitle}>Topplistan</h2>
+        <section className={styles.trending_arrivals}>
+          {tempProducts.filter(x => x.likes > 300).map((productData, i) => (
+            <ProductCard pD={productData} key={i} />
+          ))}
+        </section>
+      </div>
     </>
   )
 }
