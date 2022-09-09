@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import styles from './ImgSlider.module.css'
 import {AiFillHeart} from 'react-icons/ai'
+import {BsArrowLeftCircle, BsArrowRightCircle} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 const Slider = ({sliderData}) => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -17,17 +19,18 @@ const Slider = ({sliderData}) => {
   return (
     <div className={styles.slider_content}>
       <div className={styles.arrows}>
-        <AiFillHeart className={styles.arrow} onClick={previousProduct}/>
-        <AiFillHeart className={styles.arrow} onClick={nextProduct}/>
-        {/* <span >&#9665;</span>
-        <span >&#x25B7;</span> */}
+        <BsArrowLeftCircle className={styles.arrow} onClick={previousProduct}/>
+        <BsArrowRightCircle className={styles.arrow} onClick={nextProduct}/>
       </div>
 
       {sliderData.map((sD, i) => (
         <div key={i} className={i === currentIndex ? `${styles.product_cell} ${styles.active}` : styles.product_cell}>
           {i === currentIndex &&
             <>
+              <Link to={`/category/`+sD.categoryslug+`/product/`+sD.id} className={styles.link} state={{product: sD, newProduct: true}}>
               <img className={styles.product_img_url} src={sD.productImgUrl} alt="News | product-image" />
+              </Link>
+              
               <span className={styles.product_title}>{sD.productTitle}</span>
               <span className={styles.product_brand}>{sD.productData.brand}</span>
               <AiFillHeart className={styles.likes_heart}/>
