@@ -1,44 +1,58 @@
 export const menuItems = [
     {
         title: 'NYHETER',
-        url: '/',
+        url: '/nyheter',
     },
     {
         title: 'KATEGORIER',
-        url: '/',
+        url: '/category',
         submenu: [
             {
                 title: 'T-shirt',
-                url: '/',
+                url: '/category/tshirt',
             },
             {
                 title: 'Tröjor',
-                url: '/',
+                url: '/category/trojor',
             },
             {
                 title: 'Byxor',
-                url: '/',
+                url: '/category/byxor',
             },
             {
                 title: 'Skor',
-                url: '/',
+                url: '/category/skor',
             },
         ],
     },
     {
         title: 'VARUMÄRKEN',
-        url: '/',
+        url: '/varumarken',
+        submenu: [
+            {
+                title: 'Parajumper',
+                url: '/varumarken/parajumper',
+            },
+            {
+                title: 'New Balance',
+                url: '/varumarken/newbalance',
+            },
+            {
+                title: 'Jack & Jones',
+                url: '/varumarken/jack&jones',
+            },
+        ],
     },
     {
         title: 'TOPPLISTAN',
-        url: '/',
+        url: '/topplistan',
     },
     {
-        title: 'SKOR',
-        url: '/',
+        title: 'JACKOR',
+        url: '/category/jackor',
     },
     {
         title: 'OUTLET',
-        url: '/',
+        url: '/outlet',
     },
 ]
