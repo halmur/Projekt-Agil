@@ -3,7 +3,7 @@ import styles from './Main.module.css'
 import HeroSection from './HeroSection'
 import ProductCard from './ProductCard'
 import ImgSlider from './ImgSlider'
-import { Link } from 'react-router-dom'
+
 
 const Main = () => {
   const seasonalTrends = [
