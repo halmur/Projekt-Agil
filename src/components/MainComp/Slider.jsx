@@ -28,13 +28,13 @@ const Slider = ({sliderData}) => {
           {i === currentIndex &&
             <>
               <Link to={`/category/`+sD.categoryslug+`/product/`+sD.id} className={styles.link} state={{product: sD, newProduct: true}}>
-              <img className={styles.product_img_url} src={sD.productImgUrl} alt="News | product-image" />
+              <img className={styles.product_img_url} src={sD.imageBig} alt="News | product-image" />
               </Link>
               
-              <span className={styles.product_title}>{sD.productTitle}</span>
-              <span className={styles.product_brand}>{sD.productData.brand}</span>
+              <span className={styles.product_title}>{sD.name}</span>
+              <span className={styles.product_brand}>{sD.brand}</span>
               <AiFillHeart className={styles.likes_heart}/>
-              <span className={styles.product_likes}>[{sD.productData.likes}]</span>
+              <span className={styles.product_likes}>[{sD.likes}]</span>
             </>
           }
         </div>

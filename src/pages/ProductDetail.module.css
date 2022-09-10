@@ -1,5 +1,6 @@
 
 .product_card {
+  margin: 5rem 0;
     padding: 10px;
     color: #273469;
     display: flex;
