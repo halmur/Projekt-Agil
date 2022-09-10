@@ -6,9 +6,10 @@ import styles from '../components/MainComp/Main.module.css'
 const Nyheter = () => {
   return (
     <>
+
       <div className={styles.products}>
       <h2 className={styles.categoryTitle}>
-          nya produker
+          Nya produker
         </h2>
         <section className={styles.trending_arrivals}>
           {tempProducts.filter(x => x.new === true).map((productData, i) => (

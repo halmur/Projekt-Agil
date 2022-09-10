@@ -2,61 +2,56 @@ import React from 'react'
 import styles from './ProductDetail.module.css'
 import { tempProducts } from '../tempProducts'
 import { useLocation, useParams } from 'react-router-dom'
-import { sliderContentData } from '../components/MainComp/imgSliderData'
+import style from "./ProductDetail.module.css"
 
 const Product = () => {
   const location = useLocation()
   const {id} = useParams()
 
-  let productBack
-  const findProduct = arrayToSearch => (
-    productBack = arrayToSearch.find(x => x.id === +id)
-  )
-  findProduct(location.state && location.state.newArticle ? sliderContentData : tempProducts)
 
-  const product = location.state ? location?.state?.product : productBack
+const productBack = tempProducts.find(x => x.id === +id)
 
-  console.log(product);
-  return (
-    <>
-    {product?.productData ?
-      <section className={styles.new_product_container}>
-        <div className={styles.new_product}>
-          <h1>New Product Arrival</h1>
-          <img src={product.productImgUrl}></img>
-          
-          <div className={styles.new_product_info}>
-            <h4>{product.productData.name}</h4>
-            <span>
-              Brand: <span className={styles.new_product_brand}>{product.productData.brand}</span>
-            </span>
-            <span>Price: {product.productData.price}</span>
-            <span>Loved many many times: {product.productData.likes}</span>
-          </div>
+const product = location.state ? location?.state?.product : productBack
 
-          <button>Buy</button>
-        </div>
-      </section>
-    :
-      <section className={styles.product_container}>
-        <div className={styles.product}>
-          <h1>Product</h1>
-          <img src={product.image}></img>
+console.log(product);
 
-          <div className={styles.product_info}>
-            <h4>{product.name}</h4>
-            <span>
-              Brand: <span className={styles.product_brand}>{product.brand}</span>
-            </span>
-            <span>Price: {product.price}</span>
-          </div>
 
-          <button>Buy</button>
-        </div>
-      </section>
-    }
-    </>
-  )
+const handleChange = event => {
+  console.log(event.target.value);
+};
+
+
+return (
+<>
+ <form >
+   <div className={styles.products}>
+     <div className={style.product_card}>
+       <img className={style.product_img} src={product.image} alt={product.category + ' image' } />
+  
+       <div className={style.info}>
+       <span className={style.product_name}>{product.name}</span>
+       <span className={style.product_brand}>{product.brand}</span>
+       <span className={style.product_price}>{product.price} kr</span>
+
+      <select onChange={handleChange} name="size" id="size">
+      {product.size.map((size) => {
+        return (<option key={size} value={size}>{size}</option>)
+       })} 
+      </select>
+
+      <select onChange={handleChange} name="color" id="color">
+       {product.color.map((color) => {
+        return (<option key={color} value={color}>{color}</option>)
+       })} 
+      </select>
+         <button type='submit' className={style.goback}>Lägg till</button>
+       </div>
+     </div>
+   </div>
+ </form>
+</>
+);
+
 }
 
-export default Product
+export default Product;
