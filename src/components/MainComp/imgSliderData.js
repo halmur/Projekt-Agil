@@ -3,6 +3,7 @@ export const sliderContentData = [
     id: 1,
     productTitle: 'GEL-QUANTUM 360 VII - Running Shoes',
     productImgUrl: 'https://via.placeholder.com/380xs380.png?text=product+image',
+    categoryslug: 'skor',
     productData: {
       name: 'GEL-QUANTUM 360 VII',
       brand: 'Asics',
@@ -15,6 +16,7 @@ export const sliderContentData = [
     id: 2,
     productTitle: 'Lost Temple - Double printed T-Shirt',
     productImgUrl: 'https://via.placeholder.com/380xs380.png?text=product+image',
+    categoryslug: 'tshirt',
     productData: {
       name: 'Lost Temple',
       brand: 'Quiksilver',
@@ -27,6 +29,7 @@ export const sliderContentData = [
     id: 3,
     productTitle: 'Eastport - Utility Jacket',
     productImgUrl: 'https://via.placeholder.com/380xs380.png?text=product+image',
+    categoryslug: 'jackor',
     productData: {
       name: 'Eastport',
       brand: 'Levis',
@@ -39,6 +42,7 @@ export const sliderContentData = [
     id: 4,
     productTitle: 'P401 - Oversized Hoodie',
     productImgUrl: 'https://via.placeholder.com/380xs380.png?text=product+image',
+    categoryslug: 'Hoodies',
     productData: {
       name: 'P401',
       brand: 'Purple Brand',

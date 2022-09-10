@@ -33,23 +33,23 @@
       z-index: 10;
     }
       .arrow {
-        font-size: 4rem;
-        margin-right: 20px;
-        color: #273469;
-        background-color: orange;
-        transform: rotate(-90deg);
+        margin: 0 20px 20px 0;
+        font-size: 3.5rem;
+        color: #273469bb;
         cursor: pointer;
+        transition: .3s;
       }
-      .arrow:first-child {
-        transform: rotate(90deg);
-      }
+        .arrow:hover {
+          color: #273469;
+          transform: scale(1.1);
+        }
 
     .product_cell {
       grid-area: 1 / 2 / 2 / 3;
       align-self: center;
       height: 620px;
       padding: 1rem;
-      border: 1px solid black;
+      border: 1px solid black;border-radius: 8px;
       background-color: #fff;
       transition: 1s;
       opacity: 0;
