@@ -14,6 +14,7 @@ import Varumarken from './pages/Varumarken';
 import Topplistan from './pages/Topplistan';
 import Outlet from './pages/Outlet';
 import ProductDetail from './pages/ProductDetail';
+import Varukorg from './pages/Support';
 
 
 
@@ -33,6 +34,7 @@ root.render(
       </Route>
       <Route path='/signup' element={<Signup />} />
       <Route path='/admin' element={<AdminHome />} />
+      <Route path='/support' element={<Varukorg />} />
       <Route path='/admin/newcategory' element={<NewCategory />} />
       <Route path='/admin/newproduct' element={<NewProduct />} />
 
