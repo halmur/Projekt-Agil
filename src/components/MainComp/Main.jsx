@@ -3,80 +3,24 @@ import styles from './Main.module.css'
 import HeroSection from './HeroSection'
 import ProductCard from './ProductCard'
 import ImgSlider from './ImgSlider'
+import { tempProducts } from '../../tempProducts'
 
 
 const Main = () => {
-  const seasonalTrends = [
-    {
-      id: 1,
-      name: 'JJICHRIS JJORIGINAL AM 994',
-      brand: 'Jack & Jones',
-      category: 'Jeans',
-      categoryslug: 'byxor',
-      price: '499',
-      image: 'https://via.placeholder.com/220xs300.png?text=product+image',
-      size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
-      color: ['lightblue', 'black', 'grey', 'white', 'beige']
-    },
-    {
-      id: 2,
-      name: 'MR530SG Shoe',
-      brand: 'New Balance',
-      category: 'Sneakers',
-      categoryslug: 'skor',
-      price: '1099',
-      image: 'https://via.placeholder.com/220xs300.png?text=product+image',
-      size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
-      color: ['black', 'grey', 'white']
-    },
-    {
-      id: 3,
-      name: 'PJS M Spectre Body Warmer',
-      brand: 'Parajumper',
-      category: 'Jackor',
-      categoryslug: 'jackor',
-      price: '3499',
-      image: 'https://via.placeholder.com/220xs300.png?text=product+image',
-      size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
-      color: ['black']
-    },
-    {
-      id: 4,
-      name: 'PJS M Spectre Body Warmer',
-      brand: 'Parajumper',
-      category: 'Jackor',
-      categoryslug: 'jackor',
-      price: '3499',
-      image: 'https://via.placeholder.com/220xs300.png?text=product+image',
-      size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
-      color: ['black']
-    },
-    {
-      id: 5,
-      name: 'PJS M Spectre Body Warmersdf asdfsdf ',
-      brand: 'Parajumper',
-      category: 'Jackor',
-      categoryslug: 'jackor',
-      price: '3499',
-      image: 'https://via.placeholder.com/220xs300.png?text=product+image',
-      size: ['size-1', 'size-2', 'size-3', 'size-4', 'size-5'],
-      color: ['black']
-    }
-  ]
+  const slicedArray = tempProducts.slice(0, 5)
 
-
-  return (      
-    <> 
+  return (
+    <>
       <main className={styles.main}>
         <HeroSection />
-        
+
         <ImgSlider />
-        
+
         <div className={styles.content}>
           <section className={styles.trending_arrivals}>
             <h1>5 Hösttrender att smygstarta med</h1>
 
-            {seasonalTrends.map((productData, i) => (
+            {slicedArray.map((productData, i) => (
               <ProductCard pD={productData} key={i} />
             ))}
           </section>

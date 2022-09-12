@@ -3,6 +3,7 @@ import instagram from "../../media/instagramicon.png"
 import facebook from "../../media/facebookicon.png"
 import tiktok from "../../media/tiktokicon.png"
 import styles from "./Footer.module.css"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,6 +16,9 @@ const Footer = () => {
               <li>Om oss</li>
               <li>FAQ</li>
               <li>Ångerrätt & Retur</li>
+              <li><Link to="/support">
+            <button className={styles.signButton}>Support</button>
+          </Link></li>
             </ul>
           </div>
           <div className={styles.icons}>

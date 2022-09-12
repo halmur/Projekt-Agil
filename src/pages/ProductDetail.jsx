@@ -1,13 +1,13 @@
 import React from 'react'
-import styles from '../components/MainComp/Main.module.css'
+import styles from './ProductDetail.module.css'
 import { tempProducts } from '../tempProducts'
 import { useLocation, useParams } from 'react-router-dom'
 import style from "./ProductDetail.module.css"
 
-
 const Product = () => {
   const location = useLocation()
   const {id} = useParams()
+
 
 const productBack = tempProducts.find(x => x.id === +id)
 
@@ -51,6 +51,7 @@ return (
  </form>
 </>
 );
+
 }
 
 export default Product;
